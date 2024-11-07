@@ -1,20 +1,22 @@
 Task Scheduler with Eisenhower Matrix
 
 This is a task scheduling application built with Streamlit and Python, designed to help users organize tasks according to their priority and urgency using the Eisenhower Matrix. Tasks can be added with details like time required, priority, importance, and urgency. The application categorizes tasks into four categories based on the Eisenhower Matrix:
+
 	•	Do Now: Urgent and Important
 	•	Plan: Not Urgent but Important
 	•	Delegate: Urgent but Not Important
 	•	Eliminate: Not Urgent and Not Important
 
 Folder Structure
-task_scheduler_app/
-├── streamlitapp.py            # Main Streamlit application
-├── requirements.txt           # Dependencies for the project
-├── README.md                  # Documentation
-├── data/                      # Folder for storing data files
-│   └── tasks.csv              # CSV file for storing tasks
-└── utils/                     # Folder for utility functions
-    └── task_utils.py          # Task categorization and sorting functions
+
+	task_scheduler_app/
+	├── streamlitapp.py            # Main Streamlit application
+	├── requirements.txt           # Dependencies for the project
+	├── README.md                  # Documentation
+	├── data/                      # Folder for storing data files
+	│   └── tasks.csv              # CSV file for storing tasks
+	└── utils/                     # Folder for utility functions
+	    └── task_utils.py          # Task categorization and sorting functions
 
 Features
 
@@ -30,32 +32,35 @@ Requirements
 
 Installation and Setup
 
-	1.	Clone the Repository
-Clone this repository or download it as a ZIP file.
-git clone https://github.com/Sagnik0684/Task_Scheduler.git
-cd Task_Scheduler
+1. Clone the Repository
+Clone this repository or download it as a ZIP file:
+
+		•	git clone https://github.com/Sagnik0684/Task_Scheduler.git
+		•	cd Task_Scheduler
 
 
-	2.	Set Up a Virtual Environment (Optional but Recommended)
-python3 -m venv venv
-source venv/bin/activate  # On macOS/Linux
-venv\Scripts\activate     # On Windows
+2.Set Up a Virtual Environment (Optional but Recommended):
+
+	•	python3 -m venv venv
+	•	source venv/bin/activate  # On macOS/Linux
+	•	venv\Scripts\activate     # On Windows
 
   3.	Install Dependencies
-Install the required Python packages using requirements.txt:
+	Install the required Python packages using requirements.txt:
 
-pip install -r requirements.txt
+	•	pip install -r requirements.txt
 
 4.	Create tasks.csv File
 In the data/ folder, create a tasks.csv file with only the header row to start:
 
-Task Name,Description,Time Required (hrs),Priority,Importance,Urgency,Category
+		Task Name,Description,Time Required (hrs),Priority,Importance,Urgency,Category
 
 
 Running the Application
 
 To run the application, use the following command:
-streamlit run streamlitapp.py
+
+	streamlit run streamlitapp.py
 
 This will launch the Streamlit server and open the application in your default web browser.
 
